@@ -13,9 +13,9 @@
   float: left;
   &__header{
     background-color: #253141;
-    height: 10%;
+    height: 100px;
     padding: 0 20px;
-    padding-top: 40px;
+    padding-top: 35px;
     &--username{
       font-size: 16px;
       font-weight: bold;
@@ -45,4 +45,10 @@
   float: left;
   height: 100vh;
   width: calc(100vw - 300px);
+  &__header{
+    height: 100px;
+    border-bottom: solid 1px #eeeeee;
+    padding-top: 35px;
+
+  }
 }
