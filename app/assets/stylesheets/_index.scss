@@ -45,7 +45,7 @@
 .main-box{
   background-color: #fafafa;
   float: left;
-  height: 100vh;
+  min-height: 100vh;
   width: calc(100vw - 300px);
   &__header{
     height: 100px;
@@ -92,5 +92,9 @@
       font-size: 14px;
       padding: 10px 0 40px 0;
     }
+  }
+  &__form{
+    background-color: #DDDDDD;
+    height: 90px;
   }
 }
