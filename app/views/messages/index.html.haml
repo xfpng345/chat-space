@@ -7,5 +7,9 @@
     .left-box__header
       .left-box__header--username
         test-name
-        = fa_icon 'edit'
+      .left-box__btn
+      =link_to "", class: "contents__btn contents__btn--twitter" do
+        = fa_icon 'edit', class: "left-box__btn--icon"
+      =link_to "", class: "contents__btn contents__btn--twitter" do
+        = fa_icon 'cog', class: "left-box__btn--icon"
     .left-box__body
