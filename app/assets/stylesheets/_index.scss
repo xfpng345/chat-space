@@ -26,6 +26,18 @@
     color: #FFFFFF;
     padding-left: 5px;
   }
+  &__body{
+    padding: 0 20px;
+    font-weight: bold;
+    &--groupname{
+      font-size: 15px;
+      padding-top: 20px;
+    }
+    &--latestmessage{
+      font-size: 11px;
+      padding: 5px 0 40px 0;
+    }
+  }
 }
 
 
