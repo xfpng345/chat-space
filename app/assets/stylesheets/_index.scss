@@ -100,12 +100,14 @@ min-height: 100vh;
   &__form{
     background-color: #DDDDDD;
     height: 90px;
-    bottom: calc(100vw - 0px);
+    width: calc(100vw - 300px);
   }
-//   input{
-//   height: 50px;
-//   background-color: #fafafa;
-//   margin: 20px 40px;
-//   width: 100%;
-//   }
+  input{
+  height: 50px;
+  background-color: #fafafa;
+  margin: 20px 40px;
+  float: left;
+  width: 80%;
+  border: solid 0px;
+  }
 }
