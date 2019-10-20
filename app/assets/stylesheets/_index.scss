@@ -101,14 +101,16 @@ min-height: 100vh;
     background-color: #DDDDDD;
     height: 90px;
     width: calc(100vw - 300px);
-  
   &--input{
   height: 50px;
   background-color: #fafafa;
-  margin: 20px 10px 20px 40px;
+  padding: 0px 40px 0px 10px;
+  margin: 20px 0px 20px 40px;
   float: left;
-  width: 70%;
+  width: 80%;
   border: solid 0px;
+  }
+  &--btn{
   }
   &--sendbtn{
     background-color: #38AEF0;
