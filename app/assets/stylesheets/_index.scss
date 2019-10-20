@@ -42,6 +42,10 @@
   }
 }
 
+.messages-box{
+  height: calc(100vh - 190px)
+}
+
 .main-box{
   background-color: #fafafa;
   float: left;
@@ -96,6 +100,7 @@
   &__form{
     background-color: #DDDDDD;
     height: 90px;
+    bottom: calc(100vw - 0px);
   }
 //   input{
 //   height: 50px;
