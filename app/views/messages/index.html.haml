@@ -49,6 +49,8 @@
         .main-box__messages--latestmessage
           さようなら
     .main-box__form
-      %input.main-box__form--input{:placeholder => "type a message",}
-      = fa_icon 'image', class: "main-box__from--btn"
+      .main-box__form--box
+        %input.main-box__form--input{:placeholder => "type a message",}
+        %label.main-box__form--image
+          = fa_icon 'image'
       %input{type: "submit", value: "Send", class: "main-box__form--sendbtn"}
