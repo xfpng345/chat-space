@@ -8,9 +8,9 @@
       .left-box__header--username
         test-name
       .left-box__btn
-      =link_to "", class: "contents__btn contents__btn--twitter" do
+      =link_to "", class: "left-box__btn" do
         = fa_icon 'edit', class: "left-box__btn--icon"
-      =link_to "", class: "contents__btn contents__btn--twitter" do
+      =link_to "", class: "left-box__btn" do
         = fa_icon 'cog', class: "left-box__btn--icon"
     .left-box__body
       .left-box__body--groupname
@@ -31,7 +31,7 @@
         test-group
         .main-box__header--member
           Member : testuser
-      .main-box__header--edit
+      =link_to "", class: "main-box__header--edit" do
         Edit
     .messages-box
       .main-box__messages

@@ -75,6 +75,9 @@ min-height: 100vh;
       border: solid 1px #38AEF0; 
       margin-top: 28px;
       position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      line-height: 40px;
     }
   }
   &__messages{
