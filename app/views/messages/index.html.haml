@@ -51,5 +51,4 @@
     .main-box__form
       %input.main-box__form--input{:placeholder => "type a message",}
       = fa_icon 'image', class: "main-box__from--btn"
-      =link_to "", class: "main-box__form--sendbtn" do
-        Send
+      %input{type: "submit", value: "Send", class: "main-box__form--sendbtn"}
