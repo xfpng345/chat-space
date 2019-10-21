@@ -52,8 +52,9 @@
         さようなら
   .main-box__form
     .main-box__form--box
-      %input.main-box__form--input{:placeholder => "type a message",}
-      %label.main-box__form--image
-        = fa_icon 'image'
-        %input{type: "file", class: "main-box__form--file"}
-    %input{type: "submit", value: "Send", class: "main-box__form--sendbtn"}
+      .main-box__form--block
+        %input.main-box__form--input{:placeholder => "type a message",}
+          %label.main-box__form--image
+            = fa_icon 'image'
+            %input{type: "file", class: "main-box__form--file"}
+      %input{type: "submit", value: "Send", class: "main-box__form--sendbtn"}
