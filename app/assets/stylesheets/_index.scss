@@ -127,6 +127,9 @@ min-height: 100vh;
     cursor: pointer;
     font-size: 1.3rem;
   }
+  &--file{
+    display: none;
+  }
   &--sendbtn{
     background-color: #38AEF0;
     height: 50px;
