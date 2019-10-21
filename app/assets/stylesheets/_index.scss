@@ -1,6 +1,6 @@
 
 .header {
-  background-color: #38AEF0;
+  background-color: $keycolor;
   color:white;
   text-align: center;
 }
@@ -71,8 +71,8 @@ min-height: 100vh;
       float: right;
       height: 40px;
       padding: 0 20px;
-      color: #38AEF0;
-      border: solid 1px #38AEF0; 
+      color: $keycolor;
+      border: solid 1px $keycolor; 
       margin-top: 28px;
       position: relative;
       cursor: pointer;
@@ -131,7 +131,7 @@ min-height: 100vh;
     display: none;
   }
   &--sendbtn{
-    background-color: #38AEF0;
+    background-color: $keycolor;
     height: 50px;
     display: inline-block;
     color: white;
