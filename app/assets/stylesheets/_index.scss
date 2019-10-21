@@ -42,6 +42,7 @@
     font-weight: bold;
     overflow: scroll;
     &--messagebox{
+      
       margin-bottom: 40px;
       &--groupname{
          font-size: 15px;
@@ -61,7 +62,6 @@
 .main-box{
   background-color: #fafafa;
   float: left;
-  min-height: 100vh;
   width: calc(100vw - 300px);
   &__header{
     height: 100px;
@@ -83,10 +83,9 @@
       float: right;
       height: 40px;
       padding: 0 20px;
+      margin-top: 28px;
       color: $keycolor;
       border: solid 1px $keycolor; 
-      margin-top: 28px;
-      position: relative;
       cursor: pointer;
       text-decoration: none;
       line-height: 40px;
