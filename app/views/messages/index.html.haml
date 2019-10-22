@@ -4,12 +4,13 @@
 .left-box
   .left-box__header
     .left-box__header--namebox
-      test-name
+      = current_user.name
       .left-box__header--btn
         = fa_icon 'edit',class: "left-box__header--btn--icon"
         %input.left-box__header--btn--input{type: "button",}
-        = fa_icon 'cog',class: "left-box__header--btn--icon"
-        %input.left-box__header--btn--input{type: "button",}
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog',class: "left-box__header--btn--icon"
+          %input.left-box__header--btn--input{type: "button",}
   .left-box__body
     .left-box__body--messagebox
       .left-box__body--messagebox--groupname
