@@ -1,69 +1,11 @@
-*{
-  box-sizing: border-box;
-}
-
-.header {
-  background-color: $keycolor;
-  color:white;
-  text-align: center;
-}
-
-.left-box{
-  background-color: #2f3e51;
-  color:#FFFFFF;
-  width: 300px;
-  float: left;
-  &__header{
-    background-color: #253141;
-    height: 100px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    &--namebox{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      font-size: 16px;
-      font-weight: bold;
-    }
-    &--btn{
-      cursor: pointer;
-      &--icon{
-      padding-left: 5px;
-      }
-      &--input{
-      display: none;
-      }
-    }
-  }
-  &__body{
-    height: calc(100vh - 100px);
-    padding: 20px 20px 0;
-    font-weight: bold;
-    overflow: scroll;
-    &--messagebox{
-      
-      margin-bottom: 40px;
-      &--groupname{
-         font-size: 15px;
-         margin-bottom: 5px;
-      }
-       &--latestmessage{
-        font-size: 11px;
-      }
-    }
-  }
-}
-
-.messages-box{
-  height: calc(100vh - 190px);
-  padding: 46px 40px 0 40px;  
-}
-
 .main-box{
   background-color: #fafafa;
   float: left;
   width: calc(100vw - 300px);
+  .messages-box{
+    height: calc(100vh - 190px);
+    padding: 46px 40px 0 40px;  
+  }
   &__header{
     height: 100px;
     border-bottom: solid 1px #eeeeee;
