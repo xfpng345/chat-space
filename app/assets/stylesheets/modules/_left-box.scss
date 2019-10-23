@@ -20,6 +20,7 @@
       cursor: pointer;
       &--icon{
       padding-left: 5px;
+      color: #FFFFFF;
       }
       &--input{
       display: none;
@@ -32,15 +33,20 @@
     font-weight: bold;
     overflow: scroll;
     &--messagebox{
-      
       margin-bottom: 40px;
       &--groupname{
          font-size: 15px;
          margin-bottom: 5px;
+         color:#FFFFFF;
+         text-decoration: none;
       }
        &--latestmessage{
         font-size: 11px;
+        color: #FFFFFF;
       }
     }
   }
+}
+a{
+  text-decoration: none;
 }
