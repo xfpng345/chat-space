@@ -10,9 +10,9 @@
           = fa_icon 'cog',class: "left-box__header--btn--icon"
           %input.left-box__header--btn--input{type: "button",}
   .left-box__body
-    .left-box__body--messagebox
-      - current_user.groups.each do |group|
-        = link_to "#" do
+    - current_user.groups.each do |group|
+      .left-box__body--messagebox
+        = link_to group_messages_path(group) do
           .left-box__body--messagebox--groupname
             = group.name
           .left-box__body--messagebox--latestmessage
