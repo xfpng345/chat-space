@@ -1,0 +1,31 @@
+.main-box
+  .main-box__header
+    .main-box__header--groupname
+      test-group
+      .main-box__header--member
+        Member : testuser
+    = link_to edit_group_path(group), class: "main-box__header--edit" do
+      Edit
+  .messages-box
+    .main-box__messages
+      .main-box__messages--username
+        test-user
+      .main-box__messages--time
+        xxxxxxxxxxxxx
+      .main-box__messages--latestmessage
+        こんにちは
+    .main-box__messages
+      .main-box__messages--username
+        test-user
+      .main-box__messages--time
+        xxxxxxxxxxxxx
+      .main-box__messages--latestmessage
+        さようなら
+  .main-box__form
+    .main-box__form--box
+      .main-box__form--block
+        %input.main-box__form--input{placeholder: "type a message",}
+          %label.main-box__form--image
+            = fa_icon 'image'
+            %input{type: "file", class: "main-box__form--file"}
+      %input{type: "submit", value: "Send", class: "main-box__form--sendbtn"}

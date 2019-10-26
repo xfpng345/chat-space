@@ -1,7 +1,10 @@
-@import "./reset";
-@import "variable";
-@import "index";
-@import "font-awesome";
+@import "./configs/reset";
+@import "./configs/variable";
+@import "./configs/colors";
+@import "./configs/flash";
+@import "./modules/header";
+@import "./modules//left-box";
+@import "./modules/main-box";
 @import "user";
-@import "colors";
-@import "flash";
+@import "group";
+@import "font-awesome";
