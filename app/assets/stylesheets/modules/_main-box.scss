@@ -5,6 +5,7 @@
   .messages-box{
     height: calc(100vh - 190px);
     padding: 46px 40px 0 40px;  
+    overflow: scroll;
   }
   &__header{
     height: 100px;
