@@ -2,6 +2,6 @@ class Message < ApplicationRecord
 belongs_to :user
 belongs_to :group
 
-validates :body, preferences: true, uniless: :image?
+validates :body, presence: true, unless: :image?
 mount_uploader :image, ImageUploader
 end
