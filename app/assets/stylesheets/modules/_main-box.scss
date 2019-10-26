@@ -52,48 +52,39 @@
       padding: 10px 0 40px 0;
     }
   }
-  &__form{
+  .form{
     background-color: #DDDDDD;
     height: 90px;
     padding: 20px 40px;
-  &--box{
+  form{
+      display: flex;
+      width: 100%;
+    }
+  &__message{
     width: 100%;
-    float: left;
+    padding: 0 10px;
+    border-style: none;
     height: 50px;
-    display: flex;
   }
-  &--block{
-    display: flex;
-    position: relative;
-    width: 100%;
-  }
-  &--input{
-  background-color: #fafafa;
-  width: calc(100% - 10px);
-  border: solid 0px;
-  height: 50px;
-  position: relative;
-  padding: 0 10px;
-  float: left;
-  }
-  &--image{
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
+  &__mask{position: relative;
+    &__image{
     font-size: 1.3rem;
     position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    }
   }
-  &--file{
-    display: none;
-  }
-  &--sendbtn{
+  &__submit{
     background-color: $keycolor;
     height: 50px;
     color: white;
     padding: 0 30px;
     margin-left: 15px;
-    text-decoration: none;
     cursor: pointer;
+  }
+  .hidden{
+    display: none;
   }
  }
 }
