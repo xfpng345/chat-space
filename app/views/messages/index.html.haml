@@ -1,2 +1,19 @@
 = render partial: 'shared/left-box'
-= render partial: 'shared/main-box', locals: { group: @group }
+.main-box
+  .main-box__header
+    .main-box__header--groupname
+      test-group
+      .main-box__header--member
+        Member : testuser
+    = link_to edit_group_path(@group), class: "main-box__header--edit" do
+      Edit
+  .messages-box
+    = render partial: 'message', collection: @messages
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :body, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
