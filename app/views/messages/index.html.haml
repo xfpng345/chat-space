@@ -2,7 +2,7 @@
 .main-box
   .main-box__header
     .main-box__header--groupname
-      test-group
+      = @group.name
       .main-box__header--member
         Member : testuser
     = link_to edit_group_path(@group), class: "main-box__header--edit" do
