@@ -1,4 +1,8 @@
 $(function(){
+  function buildPost(message){
+    var html = ``
+  }
+
   $("#new_message").on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -11,8 +15,8 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .done(function(post){
-      console.log(post.);
+    .done(function(message){
+      
     })
     .fail(function(){
 
