@@ -1,5 +1,6 @@
 $(function(){
   $("#new_message").on('submit', function(e){
+    e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr("action");
     $.ajax({
@@ -9,6 +10,12 @@ $(function(){
       dataType: "json",
       processData: false,
       contentType: false
+    })
+    .done(function(post){
+      console.log(post.);
+    })
+    .fail(function(){
+
     })
   })
 });
