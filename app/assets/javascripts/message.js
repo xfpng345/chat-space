@@ -20,6 +20,13 @@ $(function(){
                 </div>`
     return html;
   }
+  function scrollBottom(){
+    var target = $('.main-box__messages').last();
+    var position = target.offset().top + $('.messages-box').scrollTop();
+    $('.messages-box').animate({
+      scrollTop: position
+    }, 300, 'swing');
+  }
   $("#new_message").on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -33,12 +40,13 @@ $(function(){
       contentType: false
     })
     .done(function(post){
-      console.log(post.image);
       var html = buildPost(post);
-      $(".messages-box").append(html)
-      $("#message_body").val("")
+      $(".messages-box").append(html);
+      $("#message_body").val("");
+      scrollBottom();
     })
     .fail(function(){
+      alert('エラーが発生したためメッセージは送信できませんでした。');
     })
     .always(function(post){
       $('.form__submit').prop('disabled', false);
