@@ -42,8 +42,8 @@ $(function(){
     .done(function(post){
       var html = buildPost(post);
       $(".messages-box").append(html);
-      $("#message_body").val("");
       scrollBottom();
+      $("#new_message")[0].reset();
     })
     .fail(function(){
       alert('エラーが発生したためメッセージは送信できませんでした。');
