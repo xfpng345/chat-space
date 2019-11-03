@@ -48,7 +48,7 @@ $(function(){
     .fail(function(){
       alert('エラーが発生したためメッセージは送信できませんでした。');
     })
-    .always(function(post){
+    .always(function(){
       $('.form__submit').prop('disabled', false);
     })
   })
