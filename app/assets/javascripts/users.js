@@ -50,4 +50,8 @@ $(function() {
         alert("通信エラーです。ユーザーが表示できません。");
       });
   });
+
+  $(document).on("click",".user-search-add", function() {
+    console.log("成功")
+  });
 });
