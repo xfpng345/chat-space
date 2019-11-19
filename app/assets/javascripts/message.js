@@ -58,16 +58,21 @@ $(function(){
     console.log(last_message_id);
     $.ajax({
       url: "api/messages",
-      type: 'GET',
+      type: 'get',
       dataType: 'json',
       data: {id: last_message_id}
     })
     .done(function(messages) {
       console.log('success');
+      var insertHTML = '';
+      messages.forEach(function (message){
+        insertHTML = buildPost(message);
+        $('.main-box__messages').append(insertHTML)
+      })
     })
     .fail(function() {
       console.log('error');
     });
   };
-  reloadMessages()
+  setInterval(reloadMessages, 5000);
 });
