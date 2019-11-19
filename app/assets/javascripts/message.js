@@ -1,4 +1,6 @@
 $(function(){
+  last_message_id = $(".main-box__messages:last").data("message-id");
+  console.log(last_message_id);
   function buildPost(message){
     var content = message.text ? `${ message.text }` : "";
     var img = message.image ? `<img src= ${ message.image }>` : "";
