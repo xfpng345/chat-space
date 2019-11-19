@@ -1,6 +1,4 @@
 $(function(){
-  last_message_id = $(".main-box__messages:last").data("message-id");
-  console.log(last_message_id);
   function buildPost(message){
     var content = message.text ? `${ message.text }` : "";
     var img = message.image ? `<img src= ${ message.image }>` : "";
@@ -54,4 +52,22 @@ $(function(){
       $('.form__submit').prop('disabled', false);
     })
   })
+
+  var reloadMessages = function() {
+    last_message_id = $(".main-box__messages:last").data("message-id");
+    console.log(last_message_id);
+    $.ajax({
+      url: "api/messages",
+      type: 'GET',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
+    .done(function(messages) {
+      console.log('success');
+    })
+    .fail(function() {
+      console.log('error');
+    });
+  };
+  reloadMessages()
 });
