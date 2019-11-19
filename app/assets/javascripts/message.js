@@ -2,7 +2,7 @@ $(function(){
   function buildPost(message){
     var content = message.text ? `${ message.text }` : "";
     var img = message.image ? `<img src= ${ message.image }>` : "";
-    var html = `<div class="main-box__messages">
+    var html = `<div class="main-box__messages" data-message-id="${ message.id }">
                   <div class="upper-message">
                     <div class="main-box__messages--username">
                     ${message.user_name}
