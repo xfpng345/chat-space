@@ -67,7 +67,7 @@ $(function(){
       var insertHTML = '';
       messages.forEach(function (message){
         insertHTML = buildPost(message);
-        $('.main-box__messages').append(insertHTML)
+        $(".messages-box").append(insertHTML)
       })
     })
     .fail(function() {
