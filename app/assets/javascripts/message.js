@@ -71,7 +71,7 @@ $(function(){
       $('.messages-box').animate({scrollTop: $('.messages-box')[0].scrollHeight}, 'fast');
     })
     .fail(function() {
-      console.log('error');
+      alert('自動更新に失敗しました');
     });
   };
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
