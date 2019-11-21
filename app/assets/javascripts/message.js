@@ -68,6 +68,7 @@ $(function(){
         insertHTML = buildPost(message);
         $(".messages-box").append(insertHTML)
       })
+      $('.messages-box').animate({scrollTop: $('.messages-box')[0].scrollHeight}, 'fast');
     })
     .fail(function() {
       console.log('error');
